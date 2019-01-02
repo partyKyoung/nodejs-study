@@ -9,7 +9,7 @@ module.exports = {
     server: './src/server.js'
   },
   output: {
-    filename: 'server.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'build')
   },
   module: {
