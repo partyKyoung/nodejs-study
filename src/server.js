@@ -1,8 +1,9 @@
-import http from 'http';
+import Koa from 'koa';
 
-const server = http.createServer();
-const port = 3000;
+const app = new Koa();
 
-server.listen(port, () => {
-  console.log('server start!', port);
+app.use(async ctx => {
+  ctx.body = 'Hello World';
 });
+
+app.listen(3000);
